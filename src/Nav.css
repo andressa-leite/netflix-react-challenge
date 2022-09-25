@@ -1,0 +1,14 @@
+.nav_contents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_logo {
+    position: fixed;
+    left: 0;
+}
+
+.nav_avatar {
+    position: fixed;
+    right: 20px;
+}
