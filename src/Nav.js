@@ -1,13 +1,28 @@
-import React from 'react';
 import './Nav.css'
+import { useState, useEffect } from 'react';
 
 function Nav() {
+  const [show, handleShow] = useState(false)
+
+  const transitionNavbar = () => {
+    if(window.scrollY > 100) {
+      handleShow(true)
+    } else { 
+      handleShow(false)
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", transitionNavbar);
+    return () => window.removeEventListener("scroll", transitionNavbar);
+  }, [])
+
   return (
-    <div className='nav'>
+    <div className={`nav ${show && 'nav_black'}`}>
         <div className="nav_contets">
             <img 
                 className='nav_logo'
-                src='https://psfonttk.com/wp-content/uploads/2020/09/netflix-logo.png'
+                src='https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png'
                 alt='' 
             />
             <img 
