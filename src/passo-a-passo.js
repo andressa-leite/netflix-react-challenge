@@ -15,4 +15,8 @@
 
     canto esquerdo em "criação" clicar em Authentication, get started, email, enable 
     canto esquerdo em "criação" clicar em FirestoreDatabase e vai abrir Cloud Firestore
-*/
+
+
+efeito do navbar por volta de 1 hora do video
+efeito de "fade bottom" do banner a 1h 22min do video
+    */

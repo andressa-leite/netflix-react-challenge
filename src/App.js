@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Nav from './Nav';
 import HomeScreen from './HomeScreen';
+import Banner from './Banner';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Nav />
 
       
-      <HomeScreen />
+      <Banner  />
     </div>
   );
 }
