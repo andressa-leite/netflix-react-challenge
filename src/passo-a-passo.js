@@ -19,4 +19,10 @@
 
 efeito do navbar por volta de 1 hora do video
 efeito de "fade bottom" do banner a 1h 22min do video
+efeito do hover a 1h e 24min
+efeito de transformar um texto grande em um texto menor e três pontinhos a 1 hora 25 min (truncate method)
+
+instalado o axios para consumir a the movie data base com npm add axios
+
+as requests são mostradas a 1h e 39min
     */
