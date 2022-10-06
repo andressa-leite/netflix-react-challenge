@@ -25,4 +25,11 @@ efeito de transformar um texto grande em um texto menor e três pontinhos a 1 ho
 instalado o axios para consumir a the movie data base com npm add axios
 
 as requests são mostradas a 1h e 39min
+
+efeito de aumentar a imagem quando passa o mouse 1:24h do netflix 2.0
+.row_poster:hover {
+    transform: scale(1.08);
+    opacity: 1;
+}
+
     */
