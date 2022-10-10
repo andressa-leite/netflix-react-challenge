@@ -1,27 +1,26 @@
 import React from 'react';
 import './App.css';
-import Nav from './Nav';
-import HomeScreen from './HomeScreen';
-import Banner from './Banner';
-import Row from './Row';
-import requests from './Request';
+
+import HomeScreen from './screens/HomeScreen';
+import LoginScreen from './LoginScreen';
+
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 
 function App() {
+  const user = null;
+
   return (
     <div className="App">
-      
-      <Nav />
-
-      
-      <Banner  />
-
-      <Row title="NETFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOriginals} isLargeRow />
-      <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
-      <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} /> 
-      <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
-      <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} /> 
-      <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
+      {/* if there's no user, go ahead and render the login Screen, otherwise render the rest of the app*/}  
+      <Router>
+        {!user ? (<LoginScreen />) : (
+          <Link to="/">
+            <HomeScreen />
+          </Link> 
+         )}
+      </Router>
+          
     </div>
   );
 }

@@ -32,4 +32,12 @@ efeito de aumentar a imagem quando passa o mouse 1:24h do netflix 2.0
     opacity: 1;
 }
 
+para conectar o firebase no vscode:
+1 - npm install -g firebase-tools
+2 - firebase init
+
+routes 1:37 h
+
+
+
     */
