@@ -38,6 +38,16 @@ para conectar o firebase no vscode:
 
 routes 1:37 h
 
+1:51 h  - gradiente no background do loginScreen
+forma um sombreado preto por cima da imagem,
+ basicamente um efeito 3d colocando a imagem mais para o fundo e trazendo os outros itens para frente
+        background: rgba(0, 0, 0, 0.4);
+        background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0,
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, 0.8) 100%
+
 
 
     */
