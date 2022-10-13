@@ -48,6 +48,10 @@ forma um sombreado preto por cima da imagem,
         rgba(0, 0, 0, 0) 60%,
         rgba(0, 0, 0, 0.8) 100%
 
+        useRef importado do react e useNavigate (antigo useHistory) importado o react-router-dom
+        também useSelector, useDispatch importado do react-redux
+        são hooks novos para mim até o momento
+
 
 
     */

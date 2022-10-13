@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import './Banner.css';
-import axios from './axios.js';
-import requests from './Request';
+import React, { useState, useEffect } from "react";
+import "./Banner.css";
+import axios from "./axios.js";
+import requests from "./Request";
 
 function Banner() {
 
@@ -23,7 +23,7 @@ function Banner() {
   console.log(movie)
 
   function truncate(string, n){
-    return string?.length > n ? string.substr(0, n - 1) + '...' : string;
+    return string?.length > n ? string.substr(0, n - 1) + "..." : string;
   } 
 
   return (
